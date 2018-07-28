@@ -34,13 +34,24 @@ edad?console.log("Luis tiene 20 años"):console.log("Luis no tiene 20 años");
     
 // }
 
-//while
+// continue: si la condicion se cumple, se omite y sigue ejecutandose
+//break : si la condicion se cumple , se termina de ejecutar la condicion
+
+//while: ejecuta una porcion de codigo mientras una condicion se cumpla
 
 // while (condition) {
     
 // }
 
-//do while
+//do while: es similar al while pero este se ejecuta por lo menos una vez,primero ejecuta y luego evalua la condicion
 // do {
     
 // } while (condition);
+
+
+//for of (ES6) similar a un foreach php
+let name= "Luis";
+
+for (const value of name) {
+    console.log(value);
+}
