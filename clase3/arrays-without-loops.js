@@ -13,7 +13,7 @@ let estudiantes=[
     },
     {
         nombre:"dina",
-        calificacion:15
+        calificacion:20
     },
     {
         nombre:"estefany",
@@ -48,3 +48,33 @@ console.log(suma);
 
 let max= numeros.reduce((a,b)=> a>b?a:b);
 console.log(max);
+
+
+//Sacar el promedio de numeros
+
+let promedio = numeros.reduce((a,b,i,arr)=> {
+    b += a;
+    return i==arr.length-1? b/arr.length : b;
+    
+});
+console.log(promedio);
+
+
+//Estudiante que saco la mayor nota de el array Estudiante
+
+let mejorEstudiante= estudiantes.reduce((a,b)=>{
+    if (a.calificacion>b.calificacion) {
+        return {
+            nombre: a.nombre,
+            calificacion: a.calificacion
+        }}
+    else { 
+          return {
+            nombre: b.nombre,
+            calificacion: b.calificacion
+          }
+        }
+        
+    
+});
+console.log(mejorEstudiante);
